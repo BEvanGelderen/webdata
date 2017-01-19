@@ -4,10 +4,15 @@ var anaconnection = mysql.createConnection({
   host     : 'localhost',
   database : 'todo',
   user	   : 'root',
-  password : 'MarenBerzijnepisch'
+  password : 'webdata',
+  port 	: 3306, 
 });
 
-anaconnection.connect();
+anaconnection.connect(function (err) {
+	if (err) {
+		console.log(err);
+	}
+});
 
 module.exports = {
 

@@ -6,7 +6,7 @@ var connection = mysql.createConnection({
   host     : 'localhost',
   database : 'doit',
   user	   : 'root',
-  password : 'MarenBerzijnepisch'
+  password : 'webdata'
 });
 var jsonresponse;
 

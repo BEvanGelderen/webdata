@@ -1,6 +1,6 @@
 var http = require("http");
 var express = require("express");
-var fs = require("fs");
+//var fs = require("fs");
 var passport = require("passport");
 var querymod = require("./querymod");
 var analyticsmod = require("./analyticsmod");
@@ -14,13 +14,16 @@ module.exports.numberOfTodos = numberOfTodos;
 
 var app = express();
 
+app.set('views', __dirname + '/template'); 
+app.set('view engine', 'ejs'); 
+
 app.use(passport.initialize());
 app.use(passport.session());
 app.use('/', express.static(__dirname + '/clientA5'));
-app.use('/main.html', express.static(__dirname + '/clientA5/main.html'));
-app.use('/analytics', express.static(__dirname + '/clientA5/analytics.html'));
-app.get('m+a+i+n+.*', function(req, res){
-	res.redirect('/main.html');
+//app.use('/main.html', express.static(__dirname + '/clientA5/main.html'));
+//app.use('/analytics', express.static(__dirname + '/clientA5/analytics.html'));
+app.get('/m+a+i+n*', function(req, res){
+	res.render('todotemplate', {todo_array: []});
 });
 
 app.get("/todos.json", function(req, res){
