@@ -1,0 +1,31 @@
+opzet:
+
+class content (div):
+  
+  id high (ul):
+    class todo (li):
+      class done (checkbox)
+      class star (img, priority)
+    class delete (button)
+    class edit (button)
+    (time)
+    class h-plus (p(img), shows adding feature for high p)
+    class h-input:
+      id  highplus (textbox)
+      id  highdate (dateinput)
+      id  highbutton (button, for submitting the todo)
+
+  id high (ul):
+    class todo (li):
+      class done (checkbox)
+      class emptyStar (img, priority)
+    class delete (button)
+    class edit (button)
+    (time)
+    class l-plus (p(img), shows adding feature for low p)
+    class l-input:
+      id  lowplus (textbox)
+      id  lowdate (dateinput)
+      id  lowbutton (button, for submitting the todo)
+  
+  ik ben met de edit en star shit bezig  

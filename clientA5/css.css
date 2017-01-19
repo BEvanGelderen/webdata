@@ -1,0 +1,100 @@
+body {
+    font-family: "Verdana", Arial, sans-serif;
+    font-size: 105%;
+    background-color: white;
+    animation-name: wakeUp;
+    animation-duration: 1s;
+}
+@keyframes wakeUp {
+    from {background-color: white;}
+    to {background-color: white;}
+}
+h1{
+	color: #62B1F6;
+	font-variant: small-caps;
+}
+a:link {
+    color: #62B1F6;
+}
+
+/* visited link */
+a:visited {
+    color: #62B1F6;
+}
+
+/* mouse over link */
+a:hover {
+    color: grey;
+}
+
+/* selected link */
+a:active {
+    color: grey;
+}
+p.entryPage {
+	text-align: center;
+	font-size: 500%;
+
+}
+div {
+	/*
+	border: 5px solid black;
+/*
+	*/
+	overflow: auto;
+}
+div.container {
+	width: 98%;
+	padding: 5px;
+	position: absolute;
+}
+div.highPriority {
+	min-width: 500px;
+	width: 49%;
+	float: left;
+}
+div.lowPriority {
+	min-width: 500px;
+	width: 49%;
+	float: left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	border: 1px solid grey;
+	padding: 1px;
+	min-height: 60px;
+	line-height: 60px;
+	vertical-align: middle;
+}
+s {
+	color: grey;
+}
+li:hover::after {
+	content: " - click to edit ";
+	color: grey;
+}
+nav {
+	width:98%;
+	overflow: auto;
+	position: fixed;
+	padding: 3px;
+	top: 0px;
+	background-color: white;
+	z-index: 100;
+	animation-name: wakeUp;
+	animation-duration: 1s;
+}
+.nav {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+   }
